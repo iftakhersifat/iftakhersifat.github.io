@@ -8,7 +8,7 @@ const Navbar = () => {
                 <h1 className="text-xl font-bold text-indigo-600 tracking-wide">&lt;Iftakher/Hossen&gt;</h1>
             </div>
             <div className='space-x-4 hidden md:flex'>
-                <NavLink to="home">Home</NavLink>
+                <NavLink to="/">Home</NavLink>
                 <NavLink to="about">About</NavLink>
                 <NavLink to="skills">Skills</NavLink>
                 <NavLink to="projects">Projects</NavLink>

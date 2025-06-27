@@ -1,8 +1,10 @@
 import React from 'react';
+import Skills from '../Pages/Skills';
 
 const Home = () => {
     return (
-        <div className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 mt-16 px-4">
+       <div>
+         <div className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 mt-16 px-4">
   {/* Text Section */}
   <div className="md:w-2/3 space-y-4">
     <h3 className="text-lg font-medium text-gray-600">Hi, I am</h3>
@@ -22,6 +24,9 @@ const Home = () => {
     </div>
   </div>
 </div>
+<Skills></Skills>
+       </div>
+
 
     );
 };
