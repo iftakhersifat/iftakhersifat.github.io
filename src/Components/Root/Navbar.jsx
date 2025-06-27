@@ -3,11 +3,11 @@ import { NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
-        <div className='flex justify-between container mx-auto mt-10'>
+        <div className='flex justify-between max-w-5xl mx-auto mt-10 md:p-0 p-4'>
             <div>
-                <h1>Iftakher / Hossen</h1>
+                <h1 className="text-xl font-bold text-indigo-600 tracking-wide">&lt;Iftakher/Hossen&gt;</h1>
             </div>
-            <div className='space-x-4'>
+            <div className='space-x-4 hidden md:flex'>
                 <NavLink to="home">Home</NavLink>
                 <NavLink to="about">About</NavLink>
                 <NavLink to="skills">Skills</NavLink>
