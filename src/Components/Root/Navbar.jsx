@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className='space-x-4 hidden md:flex'>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="about">About</NavLink>
-                <NavLink to="skills">Skills</NavLink>
+                <a href="#skills" className="text-gray-700 hover:text-indigo-600 transition">Skills</a>
                 <NavLink to="projects">Projects</NavLink>
                 <NavLink to="contact">Contact</NavLink>
 

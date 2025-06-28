@@ -24,7 +24,10 @@ const Home = () => {
     </div>
   </div>
 </div>
-<Skills></Skills>
+
+<div id="skills">
+  <Skills ></Skills>
+</div>
        </div>
 
 
