@@ -14,7 +14,7 @@ const Home = () => {
     <h1 className="text-4xl md:text-5xl font-bold text-gray-900">Iftakher Hossen</h1>
     <h3 className="text-2xl font-semibold text-gray-700">
       I am a{' '}
-      <span className="text-indigo-600">
+      <span className="text-green-600">
         <Typewriter
           words={['Web Developer', 'Digital Marketer']}
           loop={0} // 0 = infinite loop
