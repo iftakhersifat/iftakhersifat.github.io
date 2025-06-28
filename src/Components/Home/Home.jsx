@@ -1,10 +1,11 @@
 import React from 'react';
 import Skills from '../Pages/Skills';
+import Career from '../Pages/Career';
 
 const Home = () => {
     return (
        <div>
-         <div className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 mt-16 px-4">
+         <div id='home' className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 mt-16 px-4">
   {/* Text Section */}
   <div className="md:w-2/3 space-y-4">
     <h3 className="text-lg font-medium text-gray-600">Hi, I am</h3>
@@ -25,8 +26,15 @@ const Home = () => {
   </div>
 </div>
 
-<div id="skills">
+
+{/* skills section */}
+<div id="skills" className='scroll-mt-24'>
   <Skills ></Skills>
+</div>
+
+{/* career section */}
+<div id="career" className='scroll-mt-24'>
+  <Career></Career>
 </div>
        </div>
 
