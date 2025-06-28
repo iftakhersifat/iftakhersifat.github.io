@@ -2,6 +2,7 @@ import React from 'react';
 import Skills from '../Pages/Skills';
 import Career from '../Pages/Career';
 import Contact from '../Pages/Contact';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Home = () => {
     return (
@@ -12,7 +13,18 @@ const Home = () => {
     <h3 className="text-lg font-medium text-gray-600">Hi, I am</h3>
     <h1 className="text-4xl md:text-5xl font-bold text-gray-900">Iftakher Hossen</h1>
     <h3 className="text-2xl font-semibold text-gray-700">
-      I am a <span className="text-indigo-600">Web Developer</span>
+      I am a{' '}
+      <span className="text-indigo-600">
+        <Typewriter
+          words={['Web Developer', 'Digital Marketer']}
+          loop={0} // 0 = infinite loop
+          cursor
+          cursorStyle="|"
+          typeSpeed={70}
+          deleteSpeed={50}
+          delaySpeed={1500}
+        />
+      </span>
     </h3>
     <p className="text-gray-600">
       I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning, I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
