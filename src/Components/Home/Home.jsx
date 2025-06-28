@@ -1,6 +1,7 @@
 import React from 'react';
 import Skills from '../Pages/Skills';
 import Career from '../Pages/Career';
+import Contact from '../Pages/Contact';
 
 const Home = () => {
     return (
@@ -35,6 +36,11 @@ const Home = () => {
 {/* career section */}
 <div id="career" className='scroll-mt-24'>
   <Career></Career>
+</div>
+
+{/* contact section */}
+<div id="contact" className='scroll-mt-24'>
+  <Contact></Contact>
 </div>
        </div>
 

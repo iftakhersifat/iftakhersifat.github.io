@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaCalendarAlt, FaGraduationCap } from 'react-icons/fa';
 
 const Career = () => {
   return (
-    <div  className="max-w-5xl mx-auto mt-20 px-12 ">
+    <div  className="max-w-5xl mx-auto mt-20 px-12">
       {/* title and description */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">Career</h2>
@@ -36,12 +36,12 @@ const Career = () => {
           <div className="timeline-middle">
             <div className="bg-green-600 w-3 h-3 rounded-full" />
           </div>
-          <hr className="bg-green-500 h-0.5" />
+          <hr className="bg-green-500 h-px" />
         </li>
 
         {/* 2nd */}
         <li>
-          <hr className="bg-green-500 h-0.5" />
+          <hr className="bg-green-500 h-px" />
           <div className="timeline-end md:mx-4 lg:mx-8 mx-4 w-full md:w-[400px] text-left">
             <h3 className="text-lg font-semibold text-gray-800 dark:text-white">Higher Secondary School Certificate (Science)</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">BAF Shaheen College Chittagong</p>
@@ -58,12 +58,12 @@ const Career = () => {
           <div className="timeline-middle">
             <div className="bg-green-600 w-3 h-3 rounded-full" />
           </div>
-          <hr className="bg-green-500 h-0.5" />
+          <hr className="bg-green-500 h-px" />
         </li>
 
         {/* 3rd */}
         <li>
-          <hr className="bg-green-500 h-0.5" />
+          <hr className="bg-green-500 h-px" />
           <div className="timeline-start md:mx-4 lg:mx-8 mx-4 w-full md:w-[400px] text-left">
             <h3 className="text-lg font-semibold text-gray-800 dark:text-white">Secondary School Certificate (Science)</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">Railway Public High School</p>
