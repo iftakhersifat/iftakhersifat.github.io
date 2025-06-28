@@ -6,7 +6,7 @@ const Career = () => {
     <div  className="max-w-5xl mx-auto mt-20 px-12">
       {/* title and description */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">Career</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white">Career</h2>
         <p className="mt-3 text-gray-600 dark:text-gray-300 text-lg">My Career Journey</p>
       </div>
 

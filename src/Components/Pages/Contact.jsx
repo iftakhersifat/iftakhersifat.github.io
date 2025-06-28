@@ -3,11 +3,11 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icon
 
 const Contact = () => {
   return (
-    <div className="max-w-5xl mx-auto mt-20 p-6">
+    <div className="max-w-5xl mx-auto mt-20 px-6 md:px-12">
       <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">Contact Me</h2>
-            <p className="mt-3 text-gray-600 dark:text-gray-300 text-lg">Get in touch</p>
-            </div>
+        <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white">Contact Me</h2>
+      <p className="mt-3 text-gray-600 dark:text-gray-300 text-lg">Get in touch</p>
+      </div>
 
       <div className="flex flex-col md:flex-row justify-between gap-10">
         {/* Contact info */}
@@ -43,26 +43,27 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Your Name"
               className="w-full md:w-1/2 p-4 rounded-xl bg-green-100 focus:outline-none"
             />
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Your Email"
               className="w-full md:w-1/2 p-4 rounded-xl bg-green-100 focus:outline-none"
             />
           </div>
           <textarea
             name="message"
             rows="8"
-            placeholder="Message"
-            className="w-full p-4 rounded-xl bg-green-100 focus:outline-none"
+            placeholder="Your Message"
+            className="w-full p-4 rounded bg-green-100 focus:outline-none"
           ></textarea>
           <button className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition">
   <span>Send Message</span>
   <FaPaperPlane className="text-white" />
 </button>
+
         </div>
       </div>
     </div>
