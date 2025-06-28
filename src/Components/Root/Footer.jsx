@@ -35,7 +35,6 @@ const Footer = () => {
         {/* Navigation Links */}
         <nav className="mb-6">
           <ul className="flex flex-wrap justify-center gap-6 text-sm font-medium">
-            <li><a href="#home" className="hover:text-green-100 transition">Home</a></li>
             <li><a href="#about" className="hover:text-green-100 transition">About</a></li>
             <li><a href="#skills" className="hover:text-green-100 transition">Skills</a></li>
             <li><a href="#career" className="hover:text-green-100 transition">Career</a></li>
