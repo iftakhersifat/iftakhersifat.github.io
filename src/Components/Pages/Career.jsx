@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaCalendarAlt, FaGraduationCap } from 'react-icons/fa';
 
 const Career = () => {
   return (
-    <div  className="max-w-5xl mx-auto mt-20 px-12">
+    <div  className="max-w-5xl mx-auto mt-20 px-12 md:px-14">
       {/* title and description */}
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white">Career</h2>
@@ -20,7 +20,7 @@ const Career = () => {
       <ul className="timeline timeline-vertical">
         {/* 1st */}
         <li>
-          <div className="timeline-start md:mx-4 lg:mx-8 mx-4 w-full md:w-[400px] text-left">
+          <div className="timeline-start md:mx-4 lg:mx-8 mx-4 w-full md:w-[250px] text-left">
             <h3 className="text-lg font-semibold text-gray-800 dark:text-white">B.Sc (Engg.) in CSE</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">International Islamic University Chittagong</p>
             <div className="flex items-center gap-2 mt-2 text-sm text-gray-600 dark:text-gray-400">
@@ -42,7 +42,7 @@ const Career = () => {
         {/* 2nd */}
         <li>
           <hr className="bg-green-500 h-px" />
-          <div className="timeline-end md:mx-4 lg:mx-8 mx-4 w-full md:w-[400px] text-left">
+          <div className="timeline-end md:mx-4 lg:mx-8 mx-4 w-full md:w-[250px] text-left">
             <h3 className="text-lg font-semibold text-gray-800 dark:text-white">Higher Secondary School Certificate (Science)</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">BAF Shaheen College Chittagong</p>
             <div className="flex items-center gap-2 mt-2 text-sm text-gray-600 dark:text-gray-400">
@@ -64,7 +64,7 @@ const Career = () => {
         {/* 3rd */}
         <li>
           <hr className="bg-green-500 h-px" />
-          <div className="timeline-start md:mx-4 lg:mx-8 mx-4 w-full md:w-[400px] text-left">
+          <div className="timeline-start md:mx-4 lg:mx-8 mx-4 w-full md:w-[250px] text-left">
             <h3 className="text-lg font-semibold text-gray-800 dark:text-white">Secondary School Certificate (Science)</h3>
             <p className="text-sm text-gray-500 dark:text-gray-400">Railway Public High School</p>
             <div className="flex items-center gap-2 mt-2 text-sm text-gray-600 dark:text-gray-400">

@@ -56,9 +56,9 @@ const Skills = () => {
   };
 
   return (
-    <section className="max-w-5xl mx-auto mt-20 px-6 lg:px-0">
+    <section className="max-w-5xl mx-auto mt-20 px-6 md:px-14 lg:px-0">
       <header className="text-center mb-14">
-        <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">Skills</h2>
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">Skills</h2>
         <p className="mt-3 text-gray-600 text-lg dark:text-gray-300">My Technical Expertise & Toolset</p>
       </header>
 

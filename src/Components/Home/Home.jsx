@@ -7,7 +7,7 @@ import { Typewriter } from 'react-simple-typewriter';
 const Home = () => {
     return (
        <div>
-         <div id='home' className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 mt-16 px-4">
+         <div id='home' className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 mt-16 px-7 md:px-14 lg:px-4">
   {/* Text Section */}
   <div className="md:w-2/3 space-y-4">
     <h3 className="text-lg font-medium text-gray-600">Hi, I am</h3>
@@ -32,11 +32,17 @@ const Home = () => {
   </div>
 
   {/* Avatar Section */}
-  <div className="avatar">
-    <div className="w-60 h-60 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-      <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" alt="Iftakher Hossen Profile" />
-    </div>
+  {/* Avatar Section */}
+<div className="flex-shrink-0 animate-float hover:scale-105 transition-transform duration-500 ease-in-out">
+  <div className="w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden shadow-xl ring-4 ring-green-500 ring-offset-2 ring-offset-white dark:ring-offset-black transition-all duration-300">
+    <img
+      src="assets/iftakher.png"
+      alt="Iftakher Hossen"
+      className="w-full h-full object-cover"
+    />
   </div>
+</div>
+
 </div>
 
 
