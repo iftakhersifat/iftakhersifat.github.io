@@ -1,13 +1,21 @@
 import React from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
     <div className="max-w-5xl mx-auto mt-20 px-6 md:px-14 lg:px-0">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white">Contact Me</h2>
-      <p className="mt-3 text-gray-600 dark:text-gray-300 text-lg">Get in touch</p>
-      </div>
+      {/* Heading */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center mb-12">
+                  
+            <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white">Contact Me</h2>
+            <p className="mt-3 text-gray-600 dark:text-gray-300 text-lg">Get in touch</p>
+            </motion.div>
 
       <div className="flex flex-col md:flex-row justify-between gap-10">
         {/* Contact info */}
