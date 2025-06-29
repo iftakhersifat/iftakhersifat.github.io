@@ -57,11 +57,18 @@ const Skills = () => {
 
   return (
     <section className="max-w-5xl mx-auto mt-20 px-6 md:px-14 lg:px-0">
-      <header className="text-center mb-14">
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">Skills</h2>
-        <p className="mt-3 text-gray-600 text-lg dark:text-gray-300">My Technical Expertise & Toolset</p>
-      </header>
-
+      {/* Heading */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center mb-12">
+                  
+              <h2 className="text-4xl font-bold text-gray-900 dark:text-white">Skills</h2>
+              <p className="mt-3 text-gray-600 text-lg dark:text-gray-300">My Technical Expertise & Toolset</p>
+            </motion.div>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {skills.map((skill, index) => {
           const isOpen = openIndex === index;
@@ -92,29 +99,32 @@ const Skills = () => {
               </button>
 
               <AnimatePresence initial={false}>
-                {isOpen && (
-                  <motion.div
-                    id={`panel-${index}`}
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="overflow-hidden px-5 pb-4 bg-white"
-                  >
-                    <div className="grid grid-cols-4 gap-3 justify-items-center pt-3">
-                      {skill.image.split(',').map((icon, i) => (
-                        <img
-                          key={i}
-                          src={`https://skillicons.dev/icons?i=${icon.trim()}`}
-                          alt={icon}
-                          className="h-12 w-12"
-                          loading="lazy"
-                        />
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+          {isOpen && (
+            <motion.div
+              id={`panel-${index}`}
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="overflow-hidden px-5 pb-4 bg-white"
+            >
+              <div className="grid grid-cols-4 gap-3 justify-items-center pt-3">
+                {skill.image.split(',').map((icon, i) => (
+                  <motion.img
+                    key={i}
+                    src={`https://skillicons.dev/icons?i=${icon.trim()}`}
+                    alt={icon}
+                    className="h-12 w-12"
+                    loading="lazy"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: i * 0.1, duration: 0.3 }}
+                  />
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
             </div>
           );
         })}

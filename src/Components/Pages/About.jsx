@@ -10,14 +10,10 @@ const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-center mb-12"
-      >
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-          About Me
-        </h2>
-        <p className="mt-4 text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
-          Get to know who I am, what I do, and what I’m passionate about.
-        </p>
+        className="text-center mb-12">
+            
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">About Me</h2>
+        <p className="mt-4 text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">Get to know who I am, what I do, and what I’m passionate about.</p>
       </motion.div>
 
       {/* Content */}
@@ -27,7 +23,7 @@ const About = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="w-full md:w-1/2 flex justify-center"
         >
           <div className="w-full md:w-[400px] h-auto md:h-[420px] lg:h-[380px] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700">
@@ -44,7 +40,7 @@ const About = () => {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="w-full md:w-1/2 lg:w-[600px] flex flex-col justify-center space-y-5 lg:space-y-11 text-gray-700 dark:text-gray-300 text-lg leading-relaxed"
         >
           <p>
