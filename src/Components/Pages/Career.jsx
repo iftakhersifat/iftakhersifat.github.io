@@ -1,14 +1,21 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaCalendarAlt, FaGraduationCap } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Career = () => {
   return (
     <div  className="max-w-5xl mx-auto mt-20 px-12 md:px-14">
-      {/* title and description */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white">Career</h2>
-        <p className="mt-3 text-gray-600 dark:text-gray-300 text-lg">My Career Journey</p>
-      </div>
+      {/* Heading */}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center mb-12">
+                  
+              <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white">Career</h2>
+              <p className="mt-3 text-gray-600 dark:text-gray-300 text-lg">My Career Journey</p>
+            </motion.div>
 
       {/* Education header with icon */}
       <div className="flex items-center gap-3 mb-6 justify-center">
