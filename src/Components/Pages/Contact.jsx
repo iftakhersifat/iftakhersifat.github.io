@@ -40,25 +40,45 @@ const Contact = () => {
         {/* Contact form */}
         <div className="w-full md:w-1/2 space-y-4">
           <div className="flex flex-col md:flex-row gap-4">
+
+          {/* name */}
+            <div class="w-full md:w-1/2 p-4 rounded-xl bg-green-100">
+            <label for="name" class="block text-sm  text-gray-700 mb-1">Name</label>
             <input
               type="text"
+              id="name"
               name="name"
-              placeholder="Your Name"
-              className="w-full md:w-1/2 p-4 rounded-xl bg-green-100 focus:outline-none"
-            />
+              placeholder="enter your name"
+              class="w-full bg-green-100 text-black"/>
+          </div>
+
+          {/* email */}
+            <div class="w-full md:w-1/2 p-4 rounded-xl bg-green-100">
+            <label for="email" class="block text-sm text-gray-700 mb-1">
+              Email
+            </label>
             <input
               type="email"
+              id="email"
               name="email"
-              placeholder="Your Email"
-              className="w-full md:w-1/2 p-4 rounded-xl bg-green-100 focus:outline-none"
+              placeholder="example@email.com"
+              class="w-full bg-green-100 focus:outline-none text-black"
             />
           </div>
+
+          </div>
+
+          {/* message */}
+          <div class="w-full p-4 rounded-xl bg-green-100">
+          <label for="message" class="block text-sm text-gray-700 mb-1">Message</label>
           <textarea
             name="message"
+            id="message"
             rows="8"
-            placeholder="Your Message"
-            className="w-full p-4 rounded bg-green-100 focus:outline-none"
-          ></textarea>
+            placeholder="Type your message here..."
+            class="w-full bg-green-100 focus:outline-none text-black"></textarea>
+        </div>
+
           <button className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition">
          <span>Send Message</span>
          <FaPaperPlane className="text-white" />
