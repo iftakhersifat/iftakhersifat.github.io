@@ -23,10 +23,10 @@ const Career = () => {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white">
+        <h2 className="text-3xl font-bold text-center dark:text-white">
           Career
         </h2>
-        <p className="mt-3 text-gray-600 dark:text-gray-300 text-lg">
+        <p className="mt-3 dark:text-gray-300 text-lg">
           My Career Journey
         </p>
       </motion.div>
@@ -50,17 +50,17 @@ const Career = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div className="timeline-start md:mx-4 lg:mx-8 mx-4 w-full md:w-[250px] text-left">
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+            <h3 className="text-lg font-semibold  dark:text-white">
               B.Sc (Engg.) in CSE
             </h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm  dark:text-gray-400">
               International Islamic University Chittagong
             </p>
-            <div className="flex items-center gap-2 mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex items-center gap-2 mt-2 text-sm  dark:text-gray-400">
               <FaMapMarkerAlt />
               <span>Chattogram, Bangladesh</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex items-center gap-2 text-sm  dark:text-gray-400">
               <FaCalendarAlt />
               <span>2023 - Present</span>
             </div>
@@ -82,17 +82,17 @@ const Career = () => {
         >
           <hr className="bg-green-500 h-px" />
           <div className="timeline-end md:mx-4 lg:mx-8 mx-4 w-full md:w-[250px] text-left">
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+            <h3 className="text-lg font-semibold  dark:text-white">
               Higher Secondary School Certificate (Science)
             </h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm  dark:text-gray-400">
               BAF Shaheen College Chittagong
             </p>
-            <div className="flex items-center gap-2 mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex items-center gap-2 mt-2 text-sm  dark:text-gray-400">
               <FaMapMarkerAlt />
               <span>Chattogram, Bangladesh</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex items-center gap-2 text-sm  dark:text-gray-400">
               <FaCalendarAlt />
               <span>2019 - 2021</span>
             </div>
@@ -114,17 +114,17 @@ const Career = () => {
         >
           <hr className="bg-green-500 h-px" />
           <div className="timeline-start md:mx-4 lg:mx-8 mx-4 w-full md:w-[250px] text-left">
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+            <h3 className="text-lg font-semibold  dark:text-white">
               Secondary School Certificate (Science)
             </h3>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
+            <p className="text-sm dark:text-gray-400">
               Railway Public High School
             </p>
-            <div className="flex items-center gap-2 mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex items-center gap-2 mt-2 text-sm  dark:text-gray-400">
               <FaMapMarkerAlt />
               <span>Chattogram, Bangladesh</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+            <div className="flex items-center gap-2 text-sm dark:text-gray-400">
               <FaCalendarAlt />
               <span>2014 - 2019</span>
             </div>
