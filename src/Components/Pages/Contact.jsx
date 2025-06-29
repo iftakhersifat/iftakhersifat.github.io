@@ -60,9 +60,9 @@ const Contact = () => {
             className="w-full p-4 rounded bg-green-100 focus:outline-none"
           ></textarea>
           <button className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition">
-  <span>Send Message</span>
-  <FaPaperPlane className="text-white" />
-</button>
+         <span>Send Message</span>
+         <FaPaperPlane className="text-white" />
+        </button>
 
         </div>
       </div>
