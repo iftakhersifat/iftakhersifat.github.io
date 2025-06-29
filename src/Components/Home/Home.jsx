@@ -3,6 +3,7 @@ import Skills from '../Pages/Skills';
 import Career from '../Pages/Career';
 import Contact from '../Pages/Contact';
 import { Typewriter } from 'react-simple-typewriter';
+import About from '../Pages/About';
 
 const Home = () => {
     return (
@@ -45,6 +46,10 @@ const Home = () => {
 
 </div>
 
+{/* About Section */}
+<div id="about" className='scroll-mt-24'>
+  <About></About>
+</div>
 
 {/* skills section */}
 <div id="skills" className='scroll-mt-24'>
