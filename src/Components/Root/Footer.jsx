@@ -15,7 +15,7 @@ const socialLinks = [
   },
   {
     icon: <FaEnvelope />,
-    href: 'mailto:iftakhersifat@gmail.com',
+    href: 'mailto:hossensifat615@gmail.com',
     label: 'Email',
   },
 ];

@@ -1,16 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Skills from "../Pages/Skills";
 import Career from "../Pages/Career";
 import Contact from "../Pages/Contact";
 import { Typewriter } from "react-simple-typewriter";
 import About from "../Pages/About";
-import { FaPaperPlane } from "react-icons/fa";
+import { FaPaperPlane, FaArrowUp, FaArrowDown } from "react-icons/fa";
 
-// Multiple animated blobs with different colors, sizes, and timings
+// Animated background with blobs
 const AnimatedBackground = () => (
   <div className="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden">
-    {/* Blob 1 */}
     <motion.div
       className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-green-400 opacity-30 blur-3xl"
       animate={{
@@ -18,14 +17,9 @@ const AnimatedBackground = () => (
         y: [0, 30, -30, 0],
         scale: [1, 1.1, 0.9, 1],
       }}
-      transition={{
-        duration: 30,
-        repeat: Infinity,
-        ease: "easeInOut",
-      }}
+      transition={{ duration: 30, repeat: Infinity, ease: "easeInOut" }}
       style={{ filter: "blur(120px)" }}
     />
-    {/* Blob 2 */}
     <motion.div
       className="absolute top-20 right-20 w-56 h-56 rounded-full bg-emerald-400 opacity-25 blur-2xl"
       animate={{
@@ -33,15 +27,9 @@ const AnimatedBackground = () => (
         y: [0, -20, 20, 0],
         scale: [1, 1.05, 0.95, 1],
       }}
-      transition={{
-        duration: 25,
-        repeat: Infinity,
-        ease: "easeInOut",
-        delay: 10,
-      }}
+      transition={{ duration: 25, repeat: Infinity, ease: "easeInOut", delay: 10 }}
       style={{ filter: "blur(100px)" }}
     />
-    {/* Blob 3 */}
     <motion.div
       className="absolute top-1/2 left-1/3 w-48 h-48 rounded-full bg-lime-400 opacity-20 blur-2xl"
       animate={{
@@ -49,24 +37,40 @@ const AnimatedBackground = () => (
         y: [0, 20, -20, 0],
         scale: [1, 1.1, 0.9, 1],
       }}
-      transition={{
-        duration: 35,
-        repeat: Infinity,
-        ease: "easeInOut",
-        delay: 5,
-      }}
+      transition={{ duration: 35, repeat: Infinity, ease: "easeInOut", delay: 5 }}
       style={{ filter: "blur(110px)" }}
     />
   </div>
 );
 
 const Home = () => {
+  const [showScrollUp, setShowScrollUp] = useState(false);
+
+  // Scroll to specific section
   const scrollToContact = () => {
     const section = document.getElementById("contact");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  // Detect scroll direction
+  const handleScroll = () => {
+    setShowScrollUp(window.scrollY > 200);
+  };
+
+  const handleScrollToggle = () => {
+    if (showScrollUp) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -82,12 +86,8 @@ const Home = () => {
         >
           {/* Text Section */}
           <div className="md:w-2/3 space-y-5">
-            <h3 className="text-lg font-medium text-gray-600 dark:text-gray-400">
-              Hi, I am
-            </h3>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-              Iftakher Hossen
-            </h1>
+            <h3 className="text-lg font-medium text-gray-600 dark:text-gray-400">Hi, I am</h3>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">Iftakher Hossen</h1>
             <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-300">
               I’m a{" "}
               <span className="text-green-600 dark:text-green-400">
@@ -136,26 +136,32 @@ const Home = () => {
           </motion.div>
         </motion.div>
 
-        {/* About Section */}
+        {/* Sections */}
         <div id="about" className="scroll-mt-24">
           <About />
         </div>
-
-        {/* Skills Section */}
         <div id="skills" className="scroll-mt-24">
           <Skills />
         </div>
-
-        {/* Career Section */}
         <div id="career" className="scroll-mt-24">
           <Career />
         </div>
-
-        {/* Contact Section */}
         <div id="contact" className="scroll-mt-24">
           <Contact />
         </div>
       </div>
+
+      {/* Scroll Button */}
+      <motion.button
+        onClick={handleScrollToggle}
+        className="fixed bottom-6 right-6 z-50 bg-green-600 text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        aria-label={showScrollUp ? "Scroll to Top" : "Scroll to Bottom"}
+      >
+        {showScrollUp ? <FaArrowUp /> : <FaArrowDown />}
+      </motion.button>
     </>
   );
 };
