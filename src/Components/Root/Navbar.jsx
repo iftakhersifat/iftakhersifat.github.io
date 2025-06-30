@@ -63,10 +63,19 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white/80 dark:bg-black/70 backdrop-blur-lg shadow-md rounded-b-xl">
-  <div className="max-w-5xl mx-auto px-6 md:px-14 lg:px-0 py-3 flex items-center justify-between">
-    <h1 className="text-xl font-bold text-green-600 tracking-wide">
-      &lt;Iftakher/Hossen&gt;
-    </h1>
+  <div className="max-w-5xl mx-auto px-12 md:px-28 lg:px-4 py-3 flex items-center justify-between">
+    <h1
+  onClick={() => {
+    const section = document.getElementById('home');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+  className="text-xl font-bold text-green-600 tracking-wide cursor-pointer"
+>
+  &lt;Iftakher/Hossen&gt;
+</h1>
+
 
     <nav className="hidden md:flex space-x-6 text-sm font-medium">
       {navItems.map((item) => (

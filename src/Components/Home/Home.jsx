@@ -76,7 +76,7 @@ const Home = () => {
     <>
       <AnimatedBackground />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-14 lg:px-4">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-14 lg:px-4">
         <motion.div
           id="home"
           className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 mt-20 px-6 md:px-14 lg:px-4"
