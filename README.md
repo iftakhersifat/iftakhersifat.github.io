@@ -6,7 +6,7 @@ Welcome to my personal portfolio website where I showcase my skills, career jour
 
 ## 📸 Screenshots
 
-![Portfolio Screenshot](https://prnt.sc/3jP6VrHPKUh3)
+![Portfolio Screenshot](/assets/my-portfolio.png)
 
 ---
 
