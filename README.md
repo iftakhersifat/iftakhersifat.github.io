@@ -37,16 +37,3 @@ Visit my portfolio website here: [Iftakher's Portfolio](https://iftakhersifat.gi
 | React Icons             | Vector icons                      |
 | React Simple Typewriter | Typewriter text effect            |
 | Vite                    | Build tool and development server |
-
----
-
-## 🚀 Getting Started Locally
-
-To run this project on your local machine, follow these steps:
-
-```bash
-git clone https://github.com/iftakhersifat/portfolio.git
-cd portfolio
-npm install
-npm run dev
-```
