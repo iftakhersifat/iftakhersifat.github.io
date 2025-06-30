@@ -24,7 +24,7 @@ const Contact = () => {
             <FaPhoneAlt className="text-green-600 w-6 h-6 mt-4" />
             <div>
               <h3 className="text-lg font-semibold text-black dark:text-white">Call Me</h3>
-              <p>+880 1234 567890</p>
+              <p>+88-01863-071462</p>
             </div>
           </div>
 
@@ -32,7 +32,7 @@ const Contact = () => {
             <FaEnvelope className="text-green-600 w-6 h-6 mt-4" />
             <div>
               <h3 className="text-lg font-semibold text-black dark:text-white">Email Me</h3>
-              <p>your.email@example.com</p>
+              <p>hossensifat615@gmail.com</p>
             </div>
           </div>
 

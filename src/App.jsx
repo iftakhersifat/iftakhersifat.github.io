@@ -1,12 +1,18 @@
-import './App.css'
+import React from 'react';
+import Navbar from './Components/Root/Navbar';
+import Footer from './Components/Root/Footer';
+import Home from './Components/Home/Home';
 
-function App() {
-
+const App = () => {
   return (
     <>
-      <h1>my-portfolio</h1>
+      <div className="scroll-smooth">
+        <Navbar></Navbar>
+      <Home />
+      <Footer />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

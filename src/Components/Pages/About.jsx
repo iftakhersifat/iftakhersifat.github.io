@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaDownload } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -10,10 +11,12 @@ const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="text-center mb-12">
-            
+        className="text-center mb-12"
+      >
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">About Me</h2>
-        <p className="mt-4 text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">Get to know who I am, what I do, and what I’m passionate about.</p>
+        <p className="mt-4 text-gray-600 dark:text-gray-400 text-lg max-w-2xl mx-auto">
+          Get to know who I am, what I do, and what I’m passionate about.
+        </p>
       </motion.div>
 
       {/* Content */}
@@ -26,7 +29,7 @@ const About = () => {
           viewport={{ once: false }}
           className="w-full md:w-1/2 flex justify-center"
         >
-          <div className="w-full md:w-[400px] h-auto md:h-[420px] lg:h-[380px] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700">
+          <div className="w-full md:w-[400px] h-auto md:h-[535px] lg:h-[385px] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700">
             <img
               src="/assets/sifat.png"
               alt="Iftakher Hossen"
@@ -41,7 +44,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: false }}
-          className="w-full md:w-1/2 lg:w-[600px] flex flex-col justify-center space-y-5 lg:space-y-11 text-gray-700 dark:text-gray-300 text-lg leading-relaxed"
+          className="w-full md:w-1/2 lg:w-[600px] flex flex-col justify-center space-y-5 md:space-y-2 lg:space-y-2 text-gray-700 dark:text-gray-300 text-lg leading-relaxed"
         >
           <p>
             Hi, I'm{' '}
@@ -66,13 +69,29 @@ const About = () => {
             I’m always eager to explore new technologies and collaborate on exciting projects that challenge norms and
             solve real-world problems.
           </p>
+
+          {/* CTA Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: false }}
+          >
+            <a
+              href="/assets/Iftakher_Hossen_CV.pdf"
+              download
+              className="inline-flex items-center justify-center px-6 py-3 mt-4 text-white bg-green-600 hover:bg-green-700 transition rounded-xl text-base font-medium shadow-md dark:shadow-none"
+            >
+              <span>Download CV</span>
+              <FaDownload className="ml-2 text-lg" />
+            </a>
+          </motion.div>
         </motion.div>
       </div>
 
-
-      
-      {/* Stats Section */}
-      {/* <motion.div
+      {/* Optional Stats Section */}
+      {/* 
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
@@ -94,7 +113,8 @@ const About = () => {
             <p className="mt-2 text-gray-700 dark:text-gray-300">{item.label}</p>
           </div>
         ))}
-      </motion.div> */}
+      </motion.div>
+      */}
     </section>
   );
 };
