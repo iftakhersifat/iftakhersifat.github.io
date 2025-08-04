@@ -6,7 +6,7 @@ const navItems = [
   { id: 'about', label: 'About' },
   { id: 'skills', label: 'Skills' },
   { id: 'career', label: 'Career' },
-  // { id: 'projects', label: 'Projects' },
+  { id: 'projects', label: 'Projects' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -63,7 +63,7 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white/80 dark:bg-black/70 backdrop-blur-lg shadow-md rounded-b-xl">
-  <div className="max-w-5xl mx-auto px-12 md:px-28 lg:px-4 py-3 flex items-center justify-between">
+  <div className="max-w-5xl mx-auto px-12 md:px-16 lg:px-0 py-3 flex items-center justify-between">
     <h1
   onClick={() => {
     const section = document.getElementById('home');

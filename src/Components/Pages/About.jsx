@@ -55,8 +55,8 @@ const About = () => {
             <span className="text-emerald-600 dark:text-emerald-400 font-medium">
               Chattogram, Bangladesh
             </span>
-            . I’ve completed my{' '}
-            <span className="font-medium text-indigo-600 dark:text-indigo-400">
+            . I’m currently pursuing my{' '}
+            <span className="font-medium text-green-600 dark:text-indigo-400">
               Bachelor’s degree in Computer Science and Engineering (CSE)
             </span>
             .

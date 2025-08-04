@@ -5,13 +5,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
-  "lint": "eslint .",
-  "preview": "vite preview"
-},
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
     "@babel/runtime": "^7.27.6",
     "@emailjs/browser": "^4.4.1",
@@ -26,6 +26,7 @@
     "react-scrollspy": "^3.4.3",
     "react-simple-typewriter": "^5.0.1",
     "react-tsparticles": "^2.12.2",
+    "swiper": "^11.2.10",
     "tailwindcss": "^4.1.11",
     "three": "^0.177.0",
     "tsparticles": "^3.8.1",

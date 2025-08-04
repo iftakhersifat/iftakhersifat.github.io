@@ -6,6 +6,7 @@ import Contact from "../Pages/Contact";
 import { Typewriter } from "react-simple-typewriter";
 import About from "../Pages/About";
 import { FaPaperPlane, FaArrowUp, FaArrowDown } from "react-icons/fa";
+import ProjectsPage from "../Pages/ProjectsPage";
 
 // Animated background with blobs
 const AnimatedBackground = () => (
@@ -76,10 +77,10 @@ const Home = () => {
     <>
       <AnimatedBackground />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-14 lg:px-4">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-14 lg:px-0">
         <motion.div
           id="home"
-          className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 mt-20 px-6 md:px-14 lg:px-4"
+          className="max-w-5xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 mt-20 px-6 md:px-3 lg:px-0"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
@@ -145,6 +146,9 @@ const Home = () => {
         </div>
         <div id="career" className="scroll-mt-24">
           <Career />
+        </div>
+        <div id="projects" className="scroll-mt-24">
+          <ProjectsPage></ProjectsPage>
         </div>
         <div id="contact" className="scroll-mt-24">
           <Contact />

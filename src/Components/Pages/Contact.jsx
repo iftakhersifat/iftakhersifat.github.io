@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <div className="max-w-5xl mx-auto mt-20 px-6 md:px-14 lg:px-0">
+    <div className="max-w-5xl mx-auto mt-20 px-6 md:px-3 lg:px-0">
       {/* Heading */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
