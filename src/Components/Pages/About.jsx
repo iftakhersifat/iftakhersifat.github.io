@@ -4,7 +4,7 @@ import { FaDownload } from 'react-icons/fa';
 
 const About = () => {
   return (
-    <section className="max-w-5xl mx-auto mt-20 px-6 md:px-14 lg:px-0">
+    <section className="max-w-5xl mx-auto mt-20 px-6 md:px-3 lg:px-0">
       {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -29,7 +29,7 @@ const About = () => {
           viewport={{ once: false }}
           className="w-full md:w-1/2 flex justify-center"
         >
-          <div className="w-full md:w-[400px] h-auto md:h-[535px] lg:h-[385px] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700">
+          <div className="w-full  h-auto md:h-[445px] lg:h-[385px] rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700">
             <img
               src="/assets/sifat.png"
               alt="Iftakher Hossen"
@@ -44,7 +44,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: false }}
-          className="w-full md:w-1/2 lg:w-[600px] flex flex-col justify-center space-y-5 md:space-y-2 lg:space-y-2 text-gray-700 dark:text-gray-300 text-lg leading-relaxed"
+          className="w-full md:w-[450px] lg:w-[600px] flex flex-col justify-center space-y-5 md:space-y-2 lg:space-y-2 text-gray-700 dark:text-gray-300 text-lg leading-relaxed"
         >
           <p>
             Hi, I'm{' '}
@@ -90,8 +90,8 @@ const About = () => {
       </div>
 
       {/* Optional Stats Section */}
-      {/* 
-      <motion.div
+      
+      {/* <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
@@ -113,8 +113,8 @@ const About = () => {
             <p className="mt-2 text-gray-700 dark:text-gray-300">{item.label}</p>
           </div>
         ))}
-      </motion.div>
-      */}
+      </motion.div> */}
+     
     </section>
   );
 };
