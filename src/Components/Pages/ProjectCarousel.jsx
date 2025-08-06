@@ -15,12 +15,12 @@ const projects = [
     image: "/assets/Gardening.png",
     demoLink: "https://gardening-resource-hub.netlify.app/",
   },
-//   {
-//     title: "SnapGallery",
-//     description: "Upload and share media with folder and privacy support.",
-//     image: "/project2.png",
-//     demoLink: "#",
-//   },
+  // {
+  //   title: "SnapGallery",
+  //   description: "Upload and share media with folder and privacy support.",
+  //   image: "/project2.png",
+  //   demoLink: "#",
+  // },
   // Add more projects as needed
 ];
 
@@ -56,7 +56,7 @@ const ProjectCarousel = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-green-50 dark:bg-green-900/40 rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row items-center gap-8"
+              className="bg-gradient-to-br from-green-200/90 to-green-400/80 dark:from-green-900/30 dark:to-green-800/30 border border-green-300/40 dark:border-green-700/30 rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row items-center gap-8"
             >
               {/* Project Image */}
               <div className="w-full md:w-1/2">
@@ -72,7 +72,7 @@ const ProjectCarousel = () => {
                 <h3 className="text-2xl font-semibold dark:text-white">
                   {project.title}
                 </h3>
-                <p className="mt-3 mb-6 text-gray-700 dark:text-gray-300 leading-relaxed">
+                <p className="mt-3 mb-6 text-gray-700 dark:text-gray-50 leading-relaxed">
                   {project.description}
                 </p>
                 <a

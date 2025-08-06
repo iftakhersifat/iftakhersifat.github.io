@@ -56,7 +56,7 @@ const About = () => {
               Chattogram, Bangladesh
             </span>
             . I’m currently pursuing my{' '}
-            <span className="font-medium text-green-600 dark:text-indigo-400">
+            <span className="font-medium text-green-600 dark:text-emerald-400">
               Bachelor’s degree in Computer Science and Engineering (CSE)
             </span>
             .
