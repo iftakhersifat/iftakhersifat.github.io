@@ -99,7 +99,7 @@ const Hero = () => {
                       Hire Me <FaPaperPlane className="text-sm group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </button>
                     
-                    <a href="/Iftakher_Hossen_Resume.pdf" download="Iftakher_Hossen_Resume.pdf" className="flex items-center gap-3 px-8 py-4 bg-zinc-100 dark:bg-zinc-800/50 text-zinc-900 dark:text-white font-bold rounded-2xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all active:scale-95 border border-zinc-200 dark:border-zinc-700/50"><FaDownload className="text-green-600" /> Resum</a>
+                    <a href="/Iftakher_Hossen_Resume.pdf" download="Iftakher_Hossen_Resume.pdf" className="flex items-center gap-3 px-8 py-4 bg-zinc-100 dark:bg-zinc-800/50 text-zinc-900 dark:text-white font-bold rounded-2xl hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all active:scale-95 border border-zinc-200 dark:border-zinc-700/50"><FaDownload className="text-green-600" /> Resume</a>
                   </div>
       
                   {/* Socials */}
