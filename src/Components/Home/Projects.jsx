@@ -33,7 +33,7 @@ const projects = [
 
 const Project = () => {
   return (
-    <section id="projects" className="w-full py-4 max-w-6xl mx-auto px-6 md:px-6 lg:px-4 scroll-mt-20 overflow-hidden bg-transparent">
+    <section id="projects" className="w-full py-12 max-w-6xl mx-auto px-6 md:px-6 lg:px-4 scroll-mt-20 overflow-hidden bg-transparent">
       
       {/* Section Header */}
       <motion.div
