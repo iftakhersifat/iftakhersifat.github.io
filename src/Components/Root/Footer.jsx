@@ -35,9 +35,7 @@ const Footer = () => {
                 <h1 className="text-xl font-black dark:text-white leading-none tracking-tight">
                   Iftakher<span className="text-green-500">.</span>
                 </h1>
-                <span className="text-[10px] font-bold tracking-[0.3em] text-zinc-400 dark:text-green-500/60 uppercase">
-                  Dev
-                </span>
+                <span className="text-[10px] font-bold tracking-[0.3em] text-zinc-400 dark:text-green-500/60 uppercase">Developer</span>
               </div>
             </div>
           </div>
